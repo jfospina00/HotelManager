@@ -1,0 +1,75 @@
+*{
+	text-decoration: none!important;
+}
+.OpenSans { font-family: 'Open Sans'; }
+.text-indent{ text-indent: -99999999!important;}
+/*================================== Backgrounds =============================*/
+.mbg-color-1{ background-color: #401e01!important;}
+.mbg-color-2{ background-color: #BFB188!important;}
+.mbg-color-3{ background-color: #0D0D0D!important;}
+.mbg-color-4{ background-color: #8C7E54!important;}
+.mbg-color-5{ background-color: #DFEFF2!important;}
+
+.jumbotron-1{ background-color: #D9E3DD!important; }
+
+/*================================ border =====================================*/
+.brd-brown-1{ border: 1px solid #401e01 }
+.brd-brown-2{ border: 2px solid #401e01 }
+.brd-brown-3{ border: 3px solid #401e01 }
+
+/*================================== Boxs Shadows =============================*/
+#bxshw-black{ box-shadow: 0px 5px 10px #000 !important; }
+
+/*===============================   Color   ===================================*/
+.clr-black{ color: #0D0D0D !important; }
+.clr-m1{ color: #0D0D0D !important; }
+.clr-m2{ color: #401e01 !important; }
+.clr-m3{ color: #BFB188 !important; }
+.clr-m4{ color: #8C7E54 !important; }
+.clr-m5{ color: #DFEFF2 !important; }
+
+/*================================== font =============================*/
+/*Size*/
+.fnt-1{ font-size: 1rem; }
+.fnt-2{ font-size: 2rem; }
+.fnt-3{ font-size: 3rem; }
+.fnt-4{ font-size: 4rem; }
+.fnt-5{ font-size: 5rem; }
+.fnt-6{ font-size: 6rem; }
+.fnt-7{ font-size: 7rem; }
+.fnt-8{ font-size: 8rem; }
+
+
+/*================================== height =============================*/
+.mh{ height: 108px; }
+
+/*================================== Logo =============================*/
+.logo-1{ 
+	background-image: url(../images/logo-1.png); 
+	height: 106px;
+	text-indent: -999999px;
+	width: 385px;
+}
+.logo-2{ 
+	background-image: url(../images/logo-footer.fw.png); 
+	height: 35px;
+	text-indent: -999999px;
+	width: 155px;
+}
+
+
+/*================================== margin =============================*/
+.mrg-r1{ margin-right: 10px; }
+.mrg-r2{ margin-right: 10px; }
+.mrg-r3{ margin-right: 10px; }
+.mrg-r4{ margin-right: 10px; }
+.mrg-r5{ margin-right: 10px; }
+
+
+
+/*=============================================*/
+.top-middle{
+	font-size: 2rem;
+	margin-top: 22px;
+}
+/**/
