@@ -56,7 +56,9 @@
 	text-indent: -999999px;
 	width: 155px;
 }
-
+#copy{
+	margin-top: 20px;
+}
 
 /*================================== margin =============================*/
 .mrg-r1{ margin-right: 10px; }
@@ -71,5 +73,22 @@
 .top-middle{
 	font-size: 2rem;
 	margin-top: 22px;
+	
+/*============================================*/
+	
 }
 /**/
+@media (max-width: 768px) {
+  .logo-1{
+		display: none;
+	}
+	.mh{
+		height: auto;
+	}
+	#bs-example-navbar-collapse-1 ul,
+	#bs-example-navbar-collapse-1 li{
+		color:#bbb;
+	 text-align: center;
+	}
+}
+
