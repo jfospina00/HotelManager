@@ -93,8 +93,8 @@
     			<p class="text-rigth">Adrress: Cll 15 Cra 25a # 32 -45 </p>
     		</div>
     		<div id="copy" class="col-md-4">
-    			<a class="navbar-brand logo-2">logo</a><br>
-    			<p>&copy Todos los Derechos Reservados Manizales - Colombia 2015</p>
+    			<a class="navbar-brand logo-2 block">logo</a>
+    			<p class="text-center">&copy Todos los Derechos Reservados Manizales - Colombia 2015</p>
     		</div>
     		<div id="social" class="col-md-4">
     			<h3 class="block">Redes Sociales</h3>

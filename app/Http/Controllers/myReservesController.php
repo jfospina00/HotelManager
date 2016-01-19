@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\ReserveRoom;
@@ -12,19 +11,19 @@ use App\Room;
 use Auth;
 
 class myReservesController extends Controller
-{
-
+{   //===============================
+    //    RESERVAS DE HABITACIONES
+    //===============================
     public function index()
     {
         $id = Auth::user()->client->id;
         $reserveRooms = ReserveRoom::All()->where('client_id',$id);
-        return view('myReserves/list',compact('reserveRooms'));
-
+        return view('Rooms/list',compact('reserveRooms'));
     }
 
     public function create()
     {
-        //
+        return view('Rooms/create',compact('reserveRooms'));
     }
 
     /**
@@ -46,7 +45,7 @@ class myReservesController extends Controller
     public function show($id)
     {
         $reserveRoom = ReserveRoom::find($id);
-        return view('myReserves.show', compact('reserveRoom'));
+        return view('Rooms.show');
     }
 
     /**

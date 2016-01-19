@@ -20,8 +20,8 @@ Route::get('/dashboard','DashController@index');
 Route::resource('/dashboard', 'DashboardController');
 
 //Ruta Mis Reservas
-Route::get('/myReserves','MyReserves@index');
-Route::resource('/myReserves', 'MyReservesController');
+Route::get('/Rooms','MyReserves@index');
+Route::resource('/Rooms', 'MyReservesController');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
