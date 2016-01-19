@@ -20,10 +20,15 @@ Route::get('/dashboard','DashController@index');
 Route::resource('/dashboard', 'DashboardController');
 
 //Ruta Mis Reservas
-Route::get('/Rooms','MyReserves@index');
-Route::resource('/Rooms', 'MyReservesController');
+Route::get('/Rooms','myReservesController@index');
+// Route::resource('/Rooms', 'MyReservesController');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController'
 ]);
+
+
+
+// --------- RUTAS AJAX --------------
+Route::post('/ajax/tr','AjaxController@searchReserve');

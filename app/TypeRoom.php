@@ -10,7 +10,7 @@ class TypeRoom extends Model
 
     protected $guarded = ['id'];
 
-    protected $fillable = ['name_state','name_type_room','description_type_room'];
+    protected $fillable = ['name_type_room','name_type_room','description_type_room'];
 
     public function Rooms()
     {
