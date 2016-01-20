@@ -24,7 +24,7 @@ class myReservesController extends Controller
 
     public function create()
     {
-        
+        //
     }
 
     /**
