@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hotel Manager</title>
 	<!-- Styles -->
-	<link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('/css/style.css') }}" rel="stylesheet">
+	<link href="{{ url('/css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ url('/css/style.css') }}" rel="stylesheet">
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<!-- Icons -->

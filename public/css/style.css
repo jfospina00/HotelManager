@@ -121,7 +121,9 @@
 /**/
 @media (max-width: 768px) {
   .logo-1{
-		display: none;
+  	    background-image: url(../images/logo-footer.fw.png); 
+		height: 35px;
+		width: 155px;
 	}
 	.mh{
 		height: auto;
@@ -129,7 +131,8 @@
 	#bs-example-navbar-collapse-1 ul,
 	#bs-example-navbar-collapse-1 li{
 		color:#bbb;
-	 text-align: center;
+		text-align: center;
 	}
+
 }
 

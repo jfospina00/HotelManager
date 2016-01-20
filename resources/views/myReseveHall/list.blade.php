@@ -25,11 +25,11 @@
 		<div class="col-md-10">
 			<h2 class="text-center clr-m1">Mis Eventos</h2>
 			<div class="panel panel-header panel-primary"></div>
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<table class="table table-hover text-center">
 					<input type="hidden" name="_token" value="{{ csrf_token() }}" id="_token1">
 					<input type="hidden" route="route" value="{{ url('/ajax/tr') }}">
-					<tr class="text-center">
+					<tr class="text-center mbg-color-2 clr-m1">
 						<th class="text-center">Fecha Ingreso</th>
 						<th class="text-center">Fecha Salida</th>
 						<th class="text-center">Costo</th>

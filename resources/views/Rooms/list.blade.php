@@ -10,6 +10,7 @@
 		      <div class="modal-header mbg-color-5">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <h3 class="modal-title text-center clr-m1" id="myModalLabel">Reserva de Habitación</h3>
+		        <div class="panel panel-header panel-primary"></div>
 		      </div>
 		      <div class="modal-body">
 		       	
