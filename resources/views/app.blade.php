@@ -26,7 +26,6 @@
 				</button>
 				<a class="navbar-brand logo-1">logo</a>
 			</div>
-
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left top-middle">
                 @if (Auth::guest())
@@ -51,7 +50,17 @@
                 		@endif
                 	@endif
                 	@if (Auth::user()->role_id == 2)
-                		<li><a href="{{ url('/myReserves') }}">Mis Reservas</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle"  data-toggle="dropdown"  aria-expanded="true">
+								    Mis Reservas
+								    <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="{{ url('/Rooms') }}" title="">Habitaciones</a></li>
+									<li><a href="" title="">Salas</a></li>
+								</ul>
+							</li>
+                		{{-- <li><a href="{{ url('/myReserves') }}">Mis Reservas</a></li> --}}
                 	@endif
                 @endif
 				</ul>
@@ -107,9 +116,7 @@
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script scr="{{ asset('/css/bootstrap.min.js') }}"></script>
-	<script scr="{{ asset('/css/jquery.min.js') }}"></script>
-	<script scr="{{ asset('/css/jquery-1.11.3.min.js') }}"></script>
+    <script src="{{ url('/js/scripts.js')}}"></script>
 	<script>
 	$(document).ready(function() {
 		$('.btn-alert').click(function(event) {

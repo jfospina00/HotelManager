@@ -12,9 +12,8 @@ class ReserveRoom extends Model
 
     protected $fillable = ['adult_occupant','child_occupant','start_at','exit_at','price','client_id','state_id','type_room_id','room_id'];
 
-    public function state()
-    {
-    	return $this->hasOne('App\State');
+    public function state(){
+        return $this->belongsTo('App\States','state_id');
     }
     public function client()
     {

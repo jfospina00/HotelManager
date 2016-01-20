@@ -14,15 +14,12 @@ class States extends Model
 
     public function states()
     {
-    	return $this->hasMany('App\Room');
+        return $this->hasMany('App\Room');
+        return $this->hasMany('App\ReserveRoom');
     	return $this->hasMany('App\Hall');
     	return $this->hasMany('App\User');
     	return $this->hasMany('App\Employee');
     	return $this->hasMany('App\Client');
         return $this->belongsTo('App\Mguest');
     }
-    // public function roomReserve()
-    // {
-    //     return $this->belongsTo('App\ReserveRoom', 'id');
-    // }
 }

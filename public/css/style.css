@@ -56,6 +56,18 @@
 	text-indent: -999999px;
 	width: 155px;
 }
+.dropdown-menu{
+	width: 100%;
+	padding: 0px;
+}
+.dropdown-menu li{
+	height: auto;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:active{
+	background: ;
+}
+/*======================================== FOOTER ====================*/
 #copy{
 	margin-top: 20px;
 }
@@ -73,10 +85,39 @@
 .top-middle{
 	font-size: 2rem;
 	margin-top: 22px;
-	
-/*============================================*/
-	
+}	
+/*====================MAESTRIA CODIGO========================*/
+
+#content-modal{
+	z-index: 2000;
 }
+.srh-res{
+	width: 60%;
+	margin: 0 auto;
+}
+.srh-res tr td{
+	text-align: center;
+}
+.tb-show:hover{
+	-webkit-transform:scale(1.02);
+	-moz-transform:scale(1.02);
+	-ms-transform:scale(1.02);
+	-o-transform:scale(1.02);
+	transform:scale(1.02);
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+
+}
+.tb-show td:hover{
+	cursor:pointer;
+}
+.modal-footer{
+	text-align: center !important;
+}
+/*============================================*/	
 /**/
 @media (max-width: 768px) {
   .logo-1{
