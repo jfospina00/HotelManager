@@ -495,6 +495,7 @@ return array(
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PositionTableSeeder' => $baseDir . '/database/seeds/PositionTableSeeder.php',
+    'ReserveHallSeeder' => $baseDir . '/database/seeds/ReserveHallSeeder.php',
     'ReserveRoomSeeder' => $baseDir . '/database/seeds/ReserveRoomSeeder.php',
     'RoleTableSeeder' => $baseDir . '/database/seeds/RoleTableSeeder.php',
     'RoomInventoryTableSeeder' => $baseDir . '/database/seeds/RoomInventoryTableSeeder.php',

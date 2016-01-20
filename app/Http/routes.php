@@ -23,6 +23,10 @@ Route::resource('/dashboard', 'DashboardController');
 Route::get('/Rooms','myReservesController@index');
 // Route::resource('/Rooms', 'MyReservesController');
 
+//Ruta Reserva de Salones para eventos
+Route::get('/myReseveHall','myReservesHallController@index');
+//Route::resource('/ReseveHall', 'MyReservesHallController');
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController'

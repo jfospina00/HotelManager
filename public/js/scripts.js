@@ -1,7 +1,7 @@
 $(function() {
 	$('.tb-show').click(function(event) {
 		/* Act on the event */
-		$id = $(this).attr('id');
+		$id    = $(this).attr('id');
 		$token = $('#_token1').val();
 		$route = $("input[route]").val();
 		$.post($route, {id: $id,_token:$token}, function(datos) {

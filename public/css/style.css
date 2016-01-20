@@ -1,5 +1,6 @@
 *{
 	text-decoration: none!important;
+	-webkit-transition: ease-in .2s;
 }
 .OpenSans { font-family: 'Open Sans'; }
 .text-indent{ text-indent: -99999999!important;}
@@ -21,7 +22,6 @@
 #bxshw-black{ box-shadow: 0px 5px 10px #000 !important; }
 
 /*===============================   Color   ===================================*/
-.clr-black{ color: #0D0D0D !important; }
 .clr-m1{ color: #0D0D0D !important; }
 .clr-m2{ color: #401e01 !important; }
 .clr-m3{ color: #BFB188 !important; }

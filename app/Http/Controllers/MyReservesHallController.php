@@ -3,28 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\ReserveRoom;
 use App\Client;
-use App\Room;
 use App\State;
+use App\Event;
+use App\Hall;
 use Auth;
 
-class myReservesController extends Controller
-{   //===============================
-    //    RESERVAS DE HABITACIONES
-    //===============================
+class MyReservesHallController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
     public function index()
     {
         $id = Auth::user()->client->id;
-        $reserveRooms = ReserveRoom::All()->where('client_id',$id);
-        return view('Rooms.list',['reservas'=>$reserveRooms]);
+        $myReseveHall = Hall::All()->where('client_id',$id);
+        return view('myReseveHall.list',['reservas'=>$myReseveHall]);
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -45,8 +54,7 @@ class myReservesController extends Controller
      */
     public function show($id)
     {
-        $reserveRoom = ReserveRoom::find($id);
-        return view('Rooms.show');
+        //
     }
 
     /**
