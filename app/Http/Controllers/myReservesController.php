@@ -23,7 +23,7 @@ class myReservesController extends Controller
 
     public function create()
     {
-        return view('Rooms/create',compact('reserveRooms'));
+        return view('Rooms/create');
     }
 
     /**
