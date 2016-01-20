@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\ReserveRoom;
 use App\Client;
 use App\Room;
+use App\State;
 use Auth;
 
 class myReservesController extends Controller
@@ -18,7 +19,7 @@ class myReservesController extends Controller
     {
         $id = Auth::user()->client->id;
         $reserveRooms = ReserveRoom::All()->where('client_id',$id);
-        return view('Rooms/list',compact('reserveRooms'));
+        return view('Rooms.list',['reservas'=>$reserveRooms]);
     }
 
     public function create()
