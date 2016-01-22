@@ -19,13 +19,13 @@ class PositionTableSeeder extends Seeder
         	'description_position' => 'Solo consultas de todo los registros del hotel',
         ]);
         DB::table('positions')->insert([
-        	//2
+        	//3
         	'name_position' => 'Audistorista',
         	'security_level' => 'nivel 3',
         	'description_position' => 'Resgistra huespedes,registra eventos, realiza auditorias, realiza trsuntos',
         ]);
         DB::table('positions')->insert([
-        	//2
+        	//4
         	'name_position' => 'Recepcionista',
         	'security_level' => 'nivel 4',
         	'description_position' => 'Resgistra huespedes, registra eventos',

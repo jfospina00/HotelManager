@@ -26,6 +26,7 @@
 		<div class="col-md-10">
 			<h2 class="text-center clr-m1">Mis Reservas de Habitaciones</h2>
 			<div class="panel panel-header panel-primary"></div>
+			<a href="{{ url('Rooms/create') }}" class="btn btn-success">Nueva Reserva</a>
 			<div class="panel panel-default">
 				<table class="table table-hover text-center">
 					<input type="hidden" name="_token" value="{{ csrf_token() }}" id="_token1">

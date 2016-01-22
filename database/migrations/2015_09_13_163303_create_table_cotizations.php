@@ -17,10 +17,10 @@ class CreateTableCotizations extends Migration
             $table->text('assembly_hall');//montaje de salon
             $table->date('create_at');    //fecha del evento
             $table->time('time');         //hora del evento
-            $table->string('intake');     //entrada
-            $table->string('main_course');//fuerte
-            $table->string('dessert');    //postre
-            $table->string('beverage');   //bebdia
+            $table->text('intake');     //entrada
+            $table->text('main_course');//fuerte
+            $table->text('dessert');    //postre
+            $table->text('beverage');   //bebdia
             //================  LLENABLE POR EL CLIENTE     ======================
             $table->string('child_menu_price');        //menu infantil
             $table->integer('intake_price');     //precio entrada
@@ -28,7 +28,7 @@ class CreateTableCotizations extends Migration
             $table->integer('dessert_price');    //precio postre
             $table->integer('beverage_price');   //precio bebdia
             $table->integer('total_price');      //precio total
-
+            //================  LLENABLE POR EL CLIENTE     ======================
             $table->integer('client_id')->unsigned();
             $table->foreign('client_id')->references('id')->on('clients');
 

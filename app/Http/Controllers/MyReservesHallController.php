@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\ReserveHall;
+use App\Cotization;
 use App\Client;
 use App\State;
 use App\Event;
@@ -22,8 +24,8 @@ class MyReservesHallController extends Controller
     public function index()
     {
         $id = Auth::user()->client->id;
-        $myReseveHall = Hall::All()->where('client_id',$id);
-        return view('myReseveHall.list',['reservas'=>$myReseveHall]);
+        $myReseveHall = Cotization::All()->where('client_id',$id);
+        return view('ReseveHall.list',['reservas'=>$myReseveHall]);
     }
 
     /**

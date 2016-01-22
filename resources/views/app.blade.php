@@ -57,7 +57,7 @@
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 									<li><a href="{{ url('/Rooms') }}" title="">Habitaciones</a></li>
-									<li><a href="{{ url('/myReseveHall') }}" title="">Eventos</a></li>
+									<li><a href="{{ url('/ReseveHall') }}" title="">Eventos</a></li>
 								</ul>
 							</li>
                 		{{-- <li><a href="{{ url('/myReserves') }}">Mis Reservas</a></li> --}}
@@ -114,8 +114,9 @@
     	</div>
     </footer>
 	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	
+    <script src="{{ url('/js/jquery-1.11.3.min.js')}}"></script>
+    <script src="{{ url('/js/bootstrap.js')}}"></script>
     <script src="{{ url('/js/scripts.js')}}"></script>
 	<script>
 	$(document).ready(function() {

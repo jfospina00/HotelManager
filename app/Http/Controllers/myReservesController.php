@@ -9,12 +9,13 @@ use App\ReserveRoom;
 use App\Client;
 use App\Room;
 use App\State;
+use App\TypeRoom;
+use App\TypePlan;
 use Auth;
 
 class myReservesController extends Controller
 {   //===============================
     //    RESERVAS DE HABITACIONES
-    //===============================
     public function index()
     {
         $id = Auth::user()->client->id;
@@ -24,7 +25,10 @@ class myReservesController extends Controller
 
     public function create()
     {
-        //
+        $typeRooms = TypeRoom::All();
+        $rooms     = Room::All()->where('state_id',5);
+        $typePlan = TypePlan::All();
+        return view('Rooms.create',['typeRooms'=>$typeRooms],['rooms'=>$rooms],['typePlan'=>$typePlan]);
     }
 
     /**

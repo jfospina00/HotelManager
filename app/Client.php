@@ -21,4 +21,8 @@ class Client extends Model
     {
     	return $this->hasOne('App\ReserveRoom');
     }
+    public function cotization()
+    {
+        return $this->belongsTo('App\Cotization');
+    }
 }

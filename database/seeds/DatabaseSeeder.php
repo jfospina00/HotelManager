@@ -24,6 +24,9 @@ class DatabaseSeeder extends Seeder
         $this->call(EmployeeTableSeeder::class);
         $this->call(ClientTableSeeder::class);
         $this->call(ReserveRoomSeeder::class);
+        $this->call(CotizationSeeder::class);
+        $this->call(ReserveHallSeeder::class);
+        
         Model::reguard();
     }
 }

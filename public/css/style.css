@@ -117,6 +117,8 @@
 .modal-footer{
 	text-align: center !important;
 }
+* table tr th::first-child,
+* table tr td::last-child{ border: none!important; }
 /*============================================*/	
 /**/
 @media (max-width: 768px) {

@@ -21,18 +21,17 @@ Route::resource('/dashboard', 'DashboardController');
 
 //Ruta Mis Reservas
 Route::get('/Rooms','myReservesController@index');
-// Route::resource('/Rooms', 'MyReservesController');
+Route::resource('/Rooms', 'MyReservesController');
 
 //Ruta Reserva de Salones para eventos
-Route::get('/myReseveHall','myReservesHallController@index');
-//Route::resource('/ReseveHall', 'MyReservesHallController');
+Route::get('/ReserveHall','myReservesHallController@index');
+//Route::resource('/ReserveHall', 'MyReservesHallController');
+
+// ================== RUTAS AJAX ==================
+Route::post('/ajax/tr','AjaxController@searchReserve');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController'
 ]);
 
-
-
-// --------- RUTAS AJAX --------------
-Route::post('/ajax/tr','AjaxController@searchReserve');

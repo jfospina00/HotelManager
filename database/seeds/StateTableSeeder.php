@@ -66,5 +66,12 @@ class StateTableSeeder extends Seeder
             'type_state' => 'Cliente',
             'description_state' =>'Estado que indica que el cliente que no debe nada en el hotel',
         ]);
+        DB::table('states')->insert([
+            //9
+            //Cotizaciones
+            'name_state' => 'Aceptado',
+            'type_state' => 'Cotizaciones',
+            'description_state' =>'Estado que indica que la cotiazacion a sido aceptada por el cliente',
+        ]);
     }
 }
