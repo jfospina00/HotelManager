@@ -27,7 +27,7 @@ class myReservesController extends Controller
     {
         $typeRooms = TypeRoom::All();
         $rooms     = Room::All()->where('state_id',5);
-        $typePlan = TypePlan::All();
+        $typePlan  = TypePlan::All();
         return view('Rooms.create',['typeRooms'=>$typeRooms],['rooms'=>$rooms],['typePlan'=>$typePlan]);
     }
 

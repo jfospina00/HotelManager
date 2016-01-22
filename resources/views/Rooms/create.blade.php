@@ -9,10 +9,10 @@
 			<div class="panel panel-header panel-primary"></div>
 			<div class="panel panel-default">
 			<form class="col-md-12">
-				<div class="frm-contol">
-					<input type="text" class="frm-contol">
-					<input type="text">	
-				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			 	</div>
 			</form>
 			</div>
 		</div>
