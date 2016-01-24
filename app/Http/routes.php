@@ -30,6 +30,8 @@ Route::get('/ReserveHall','myReservesHallController@index');
 // ================== RUTAS AJAX ==================
 Route::post('/ajax/tr','AjaxController@searchReserve');
 
+Route::post('/ajax/stroom','AjaxController@searchTypeRoom');
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController'
