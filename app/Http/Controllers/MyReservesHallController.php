@@ -25,7 +25,7 @@ class MyReservesHallController extends Controller
     {
         $id = Auth::user()->client->id;
         $myReseveHall = Cotization::All()->where('client_id',$id);
-        return view('ReseveHall.list',['reservas'=>$myReseveHall]);
+        return view('ReserveHall.list',['reservas'=>$myReseveHall]);
     }
 
     /**

@@ -57,7 +57,7 @@
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 									<li><a href="{{ url('/Rooms') }}" title="">Habitaciones</a></li>
-									<li><a href="{{ url('/ReseveHall') }}" title="">Eventos</a></li>
+									<li><a href="{{ url('/ReserveHall') }}" title="">Eventos</a></li>
 								</ul>
 							</li>
                 		{{-- <li><a href="{{ url('/myReserves') }}">Mis Reservas</a></li> --}}
