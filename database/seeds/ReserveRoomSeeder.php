@@ -31,5 +31,17 @@ class ReserveRoomSeeder extends Seeder
             'type_room_id'   => 5,
             'room_id'        => 4,
         ]);
+        DB::table('reserve_rooms')->insert([
+            //1
+            'adult_occupant' => 1,
+            'child_occupant' => 0,
+            'stay'           => 1,
+            'start_at'       => '2016/01/25',
+            'exit_at'        => '2015/10/27',
+            'client_id'      => 750000006,
+            'state_id'       => 5,
+            'type_room_id'   => 4,
+            'room_id'        => 3,
+        ]);
     }
 }
