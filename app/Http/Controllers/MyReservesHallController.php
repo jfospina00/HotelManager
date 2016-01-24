@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\ReserveHall;
 use App\Cotization;
+use App\TypeRoom;
 use App\Client;
 use App\State;
 use App\Event;
@@ -35,7 +36,7 @@ class MyReservesHallController extends Controller
      */
     public function create()
     {
-        //
+         
     }
 
     /**
